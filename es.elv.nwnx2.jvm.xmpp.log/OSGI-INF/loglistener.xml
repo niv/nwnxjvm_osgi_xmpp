@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" configuration-policy="require" deactivate="deactivate" immediate="true" name="es.elv.nwnx2.jvm.xmpp.log">
+   <implementation class="es.elv.nwnx2.jvm.xmpp.log.LogListenerImpl"/>
+   <service>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+      <provide interface="org.osgi.service.log.LogListener"/>
+   </service>
+   <reference bind="addLRS" cardinality="0..n" interface="org.osgi.service.log.LogReaderService" name="LogReaderService" policy="dynamic" unbind="removeLRS"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.xmpp.XMPPService" name="XMPPService" policy="static"/>
+</scr:component>

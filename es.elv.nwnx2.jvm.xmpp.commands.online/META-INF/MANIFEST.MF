@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NWNXJVM XMPP Commands: online
+Bundle-SymbolicName: es.elv.nwnx2.jvm.xmpp.commands.online
+Bundle-Version: 1.0.0.qualifier
+Import-Package: org.nwnx.nwnx2.jvm,
+ org.osgi.framework;version="1.3.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: es.elv.nwnx2.jvm.hierarchy;bundle-version="1.0.0",
+ es.elv.nwnx2.jvm.xmpp.commands;bundle-version="1.0.0",
+ es.elv.nwnx2.jvm.xmpp;bundle-version="1.0.0"
+Service-Component: OSGI-INF/online.xml

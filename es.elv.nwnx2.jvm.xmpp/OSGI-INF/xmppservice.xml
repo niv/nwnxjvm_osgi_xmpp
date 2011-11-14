@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" configuration-policy="require" immediate="true" name="es.elv.nwnx2.jvm.xmpp">
+   <implementation class="es.elv.nwnx2.jvm.xmpp.activator.XMPPServiceImpl"/>
+   <service>
+      <provide interface="es.elv.nwnx2.jvm.xmpp.XMPPService"/>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+   </service>
+   <reference cardinality="0..n" interface="org.jivesoftware.smack.MessageListener" name="MessageListener" policy="dynamic"/>
+   <reference cardinality="0..n" interface="org.jivesoftware.smack.RosterListener" name="RosterListener" policy="dynamic"/>
+   <reference cardinality="0..n" interface="org.jivesoftware.smack.ChatManagerListener" name="ChatManagerListener" policy="dynamic"/>
+   <reference cardinality="0..n" interface="es.elv.nwnx2.jvm.xmpp.XMPPFileTransferListener" name="XMPPFileTransferListener" policy="dynamic"/>
+   <reference cardinality="0..n" interface="org.jivesoftware.smack.ConnectionListener" name="ConnectionListener" policy="dynamic"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.hierarchy.bundles.HierarchyService" name="HierarchyService" policy="static"/>
+</scr:component>

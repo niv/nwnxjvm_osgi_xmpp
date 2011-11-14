@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="es.elv.nwnx2.jvm.xmpp.scorcoxfer">
+   <implementation class="es.elv.nwnx2.jvm.xmpp.scorco_xfer.impl.Impl"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.xmpp.XMPPService" name="XMPPService" policy="static"/>
+   <service>
+      <provide interface="es.elv.nwnx2.jvm.xmpp.XMPPFileTransferListener"/>
+      <provide interface="es.elv.osgi.persistence.ebean.PersistentModelClassService"/>
+   </service>
+   <reference cardinality="1..1" interface="es.elv.osgi.persistence.ebean.PersistenceService" name="PersistenceService" policy="static"/>
+</scr:component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="smack_3_2_0/smack.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/elven/workspace/es.elv.nwnx2.jvm.xmpp/smack_3_2_0/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="smack_3_2_0/smackx.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/elven/workspace/es.elv.nwnx2.jvm.xmpp/smack_3_2_0/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

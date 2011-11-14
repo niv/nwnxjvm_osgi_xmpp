@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NWNXJVM XMPP SCORCO xfer
+Bundle-SymbolicName: es.elv.nwnx2.jvm.xmpp.scorcoxfer
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: es.elv.nwnx2.jvm.hierarchy;bundle-version="1.0.0",
+ es.elv.nwnx2.jvm.net.sourceforge.nwntools;bundle-version="1.0.0",
+ es.elv.nwnx2.jvm.xmpp;bundle-version="1.0.0",
+ es.elv.nwnx2.jvm.xmpp.commands;bundle-version="1.0.0",
+ es.elv.osgi.persistence.ebean;bundle-version="2.7.0"
+Import-Package: org.nwnx.nwnx2.jvm,
+ org.osgi.framework;version="1.5.0",
+ org.osgi.service.cm;version="1.2.1",
+ org.osgi.service.component;version="1.1.0"
+Service-Component: OSGI-INF/component.xml, OSGI-INF/scocharacterfile.xml
+Export-Package: es.elv.nwnx2.jvm.xmpp.scorco_xfer

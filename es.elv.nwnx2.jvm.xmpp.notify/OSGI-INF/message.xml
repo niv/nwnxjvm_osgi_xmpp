@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="es.elv.nwnx2.jvm.xmpp.notify.commands.message">
+   <implementation class="es.elv.nwnx2.jvm.xmpp.notify.activator.Message"/>
+   <service>
+      <provide interface="es.elv.nwnx2.jvm.xmpp.commands.XMPPCommandListener"/>
+   </service>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.xmpp.XMPPService" name="XMPPService" policy="static"/>
+   <reference cardinality="1..1" interface="es.elv.osgi.persistence.ebean.PersistenceService" name="PersistenceService" policy="static"/>
+</scr:component>

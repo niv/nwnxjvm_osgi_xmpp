@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+  <OCD description="XMPP Service" name="NWNXJVM XMPP Service" id="es.elv.nwnx2.jvm.xmpp">
+    <AD name="Service" id="service" required="true" type="String" default=""/>
+    <AD name="Host" id="host" required="true" type="String" default=""/>
+    <AD name="Port" id="port" required="true" type="Integer" default="5222"/>
+    <AD name="Username" id="username" required="true" type="String" default=""/>
+    <AD name="Password" id="password" required="true" type="String" default=""/>
+    <AD name="Resource" id="resource" required="true" type="String" default="nwnxjvm"/>
+    <AD name="presenceMode" id="presenceMode" required="true" type="String" default="available">
+    	<Option label="available" value="available" />
+    	<Option label="chat" value="chat" />
+    	<Option label="away" value="away" />
+    	<Option label="xa" value="xa" />
+    	<Option label="dnd" value="dnd" />
+    </AD>
+    <AD name="presenceMessage" id="presenceMessage" required="true" type="String" default="I am a bot."/>
+    <AD name="presencePriority" id="presencePriority" required="true" type="Integer" default="10"/>
+    <AD name="presenceAppendVersion" id="presenceAppendVersion" required="true" type="Boolean" default="true"/>
+  </OCD>
+
+    <Designate pid="es.elv.nwnx2.jvm.xmpp">
+        <Object ocdref="es.elv.nwnx2.jvm.xmpp"/>
+    </Designate>
+
+</metatype:MetaData>
